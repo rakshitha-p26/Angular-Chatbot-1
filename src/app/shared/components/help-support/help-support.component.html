@@ -1,0 +1,69 @@
+<div id="helpdesksupport">
+  <button id="helpdesksupport-popup-button" (click)="openhelpPopup()">
+    Need Help?
+  </button>
+  <div id="helpdesksupport-popup" [style.display]="isVisible ? 'block' : 'none'">
+    <div id="helpdesksupport-popup-header">
+      <div class="chatbotlogo"><img src="data:image/png;base64,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" alt="alternative text" style="width: 80px;">
+      </div>
+      Digital Assistant!
+      <button id="helpdesksupport-popup-close-button" (click)="openhelpPopup()">
+        Close
+      </button>
+    </div>
+    <div id="helpdesksupport-popup-body">
+      <div class="messages" #scrollMe>
+        <div *ngFor="let message of messageresult$ | async" class="message">
+          <div [class]="message.type">
+            {{ message.message }}
+          </div>
+        </div>
+        <div *ngIf="loadingAnswer" class="message" style="width: 100%; display: block">
+          <div [class]="'client'">...</div>
+        </div>
+        <div class="messages" *ngIf="state === 'relatedQuesMode'">
+          <div class="relatedquerybtn-container">
+            <button *ngIf="show_Ask_More_Button" class="ask-more-button" (click)="askMoreQuesRequest()">❓ Ask more</button>
+            <button class="feedbckbtn" (click)="callFeedback()">Feedback</button></div>
+          <div *ngFor="let question of generatedQuery.slice(0, 4)">
+            <button class="generate-questions" (click)="populateInputMessage(question.questions)">{{ question.questions }}</button>
+          </div>
+          <div *ngIf="loadingQuestions" class="message" style="width: 100%; display: block">
+            <div [class]="'client'">...</div>
+          </div>
+        </div>
+   
+        <div *ngIf="state === 'feedbackMode'">
+          <div class="user_feedback_container">
+            <p class="user_feedback_msg">Were you happy/satisified with the service we provided?</p>
+            <button class="submitfeedbackbtn" (click)="publishFeedback('Yes')">
+              <img src="assets/smile.svg" alt="Happy Emoji" class="emoji-image" style="height: 28px;
+              width: 32px;"> Yes
+            </button>
+            <button class="submitfeedbackbtn" (click)="publishFeedback('No')">
+              <img src="assets/emoticon.svg" alt="Sad Emoji" class="emoji-image" style="height: 28px;
+              width: 32px; "> No
+            </button>
+          </div>
+          <p class="user_feedback_msg">{{ feedbackMsg }}</p>
+        </div>
+           
+      </div>
+    </div>
+    <form id="helpdesksupport-popup-footer" [formGroup]="helpBotForm">
+      <input
+        formControlName="message"
+        type="text"
+        id="helpdesksupport-popup-input"
+        placeholder="Type your message here..."
+      />
+      <button
+        id="helpdesksupport-popup-submit-button"
+        [disabled]="!helpBotForm.valid"
+        (click)="sendMessageRequest()"
+      >
+        Send
+      </button>
+    </form>
+  </div>
+</div>

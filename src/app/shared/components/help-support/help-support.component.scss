@@ -1,0 +1,245 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+#helpdesksupport {
+  font-family: "Roboto", sans-serif;
+
+  #helpdesksupport-popup-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    padding: 10px 20px;
+    background-color: #1976d2;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    z-index: 1000;
+  }
+
+  #helpdesksupport-popup {
+    position: fixed;
+    bottom: 90px;
+    right: 20px;
+    width: 450px;
+    height: 50vh;
+    min-height: 550px;
+    background-color: rgb(234, 238, 243);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    border-radius: 5px;
+    z-index: 1000;
+    display: none;
+    // flex-direction: column;
+
+    #helpdesksupport-popup-header {
+      background-color: #fafbfc;
+      color: #24292e;
+      font-size: 20px;
+      padding: 20px;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      border-radius: 15px 15px 0 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      height: 100px;
+      padding: 0 24px;
+
+      #helpdesksupport-popup-close-button {
+        border: none;
+        background-color: transparent;
+        color: #24292e;
+        font-size: 15px;
+        cursor: pointer;
+        margin-left: 120px;
+      }
+    }
+
+    #helpdesksupport-popup-body {
+      height: calc(100% - 133px);
+      padding: 10px;
+    }
+
+    #helpdesksupport-popup-footer {
+      color: #24292e;
+      font-size: 14px;
+      padding: 4px;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px;
+      border-top-color: rgb(234, 234, 234);
+      background: rgb(255, 255, 255);
+
+      #helpdesksupport-popup-input {
+        width: 100%;
+        padding: 10px;
+        border: 1px solid #fff;
+        border-radius: 5px 5px 0 0;
+        box-sizing: border-box;
+        font-size: 14px;
+      }
+
+      #helpdesksupport-popup-submit-button {
+        width: 100%;
+        padding: 15px;
+        background-color: #1976d2;
+        color: #fff;
+        border: none;
+        border-radius: 0 0 5px 5px;
+        cursor: pointer;
+        font-size: 14px;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        border-radius: 0 0 15px 15px;
+        border-top: 1px solid transparent;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        width: 100%;
+      }
+    }
+
+    .messages {
+      height: 100%;
+      overflow: auto;
+
+      .message {
+        display: flow-root;
+        width: 100%;
+
+        .client {
+          background-color: #1976d2;
+          color: white;
+          padding: 10px;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          display: inline-block;
+          max-width: 80%;
+        }
+
+        .user {
+          border: 0.5px solid #1976d2;
+          background-color: #fff;
+          color: #333;
+          padding: 10px;
+          border-radius: 5px;
+          margin-bottom: 10px;
+          display: inline-block;
+          max-width: 80%;
+          text-align: right;
+        }
+      }
+    }
+
+    .clientinitial {
+      background-color: #1976d2;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+      max-width: 80%;
+    }
+
+    .relatedquestion {
+      background-color: #1976d2;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+      max-width: 80%;
+    }
+
+    .ask-more-button {
+      padding: 6px 6px;
+      font-size: 15px;
+      border-radius: 12px;
+      background-color: #fff;
+      border: 2px solid #1976d2;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+      margin-left: 140px;
+      color: #1976d2;
+      font-style: inherit;
+    }
+
+    .ask-more-button:hover {
+      background-color: #d6dadd;
+    }
+
+    .feedbckbtn {
+      padding: 6px 6px;
+      font-size: 15px;
+      border-radius: 12px;
+      background-color: #fff;
+      border: 2px solid #1976d2;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+      margin-left: 140px;
+      color: #1976d2;
+      font-style: inherit;
+    }
+
+    .feedbckbtn:hover {
+      background-color: #d6dadd;
+    }
+
+    .generate-questions {
+      padding: 6px 6px;
+      font-size: 14px;
+      border-radius: 12px;
+      background-color: #fff;
+      border: 2px solid #1976d2;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+    }
+
+    .generate-questions:hover {
+      background-color: #1976d2;
+    }
+
+    .chatbotlogo {
+      background: transparent !important;
+      display: block;
+      max-width: 100%;
+    }
+
+    .user_feedback_msg {
+      background-color: #1976d2;
+      color: white;
+      padding: 10px;
+      border-radius: 5px;
+      margin-bottom: 10px;
+      display: inline-block;
+      max-width: 80%;
+    }
+
+    .relatedquerybtn-container {
+      display: inline-flex;
+      justify-content: flex-start;
+      margin-left: 86px;
+    }
+
+    .relatedquerybtn-container button {
+      margin-left: 22px;
+    }
+
+    .submitfeedbackbtn {
+      padding: 4px 6px;
+      font-size: 15px;
+      border-radius: 12px;
+      background-color: #fff;
+      border: 2px solid #1976d2;
+      transition: background-color 0.3s ease;
+      margin-top: 10px;
+      margin-left: 76px;
+      color: #1976d2;
+      font-style: inherit;
+    }
+
+  }
+}
